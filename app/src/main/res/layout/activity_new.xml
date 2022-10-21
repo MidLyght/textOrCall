@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewActivity">
+
+    <EditText
+        android:id="@+id/etPhone1New"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="84dp"
+        android:ems="10"
+        android:hint="Enter Phone Number..."
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/btnTextNew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etPhone2New"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="71dp"
+        android:ems="10"
+        android:hint="Enter Phone Number..."
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/btnCallNew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTextNew" />
+
+    <Button
+        android:id="@+id/btnCallNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="115dp"
+        android:onClick="callPhone"
+        android:text="Call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnTextNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="147dp"
+        android:onClick="sendText"
+        android:text="Send Text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPhone1New" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
